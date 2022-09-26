@@ -5,6 +5,7 @@ import { SelectedToppings } from "../../components/toppings";
 import { SelectedSeasonings } from "../../components/seasoning";
 import { UdonCondition } from "../../types/udonCondition";
 import React from "react";
+import Link from 'next/link'
 
 export default function displayUdoncondition() {
   const udonCondition = new UdonCondition(SelectedNoodles, SelectedSoup, SelectedHowToBoil, SelectedToppings(), SelectedSeasonings());
@@ -20,6 +21,11 @@ export default function displayUdoncondition() {
       <p>{ udonCondition.toppings} </p>
       <h3>Seasonings</h3>
       <p>{ udonCondition.seasonings} </p>
+      <h1 className="title">
+          <Link href="../">
+            <a>Back</a>
+          </Link>
+        </h1>
     </>
   )
 }
