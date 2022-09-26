@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import Head from 'next/head'
+import React from 'react'
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         </p>
 
         <h1 className="title">
-          <Link href="/posts/udon-condition">
+          <Link href="/posts/display-udon-condition">
             <a>Let's make udon!</a>
           </Link>
         </h1>

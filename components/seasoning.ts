@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectFromSixItems, GetRandomNumberFrom1ToMax } from "./selectRandom";
+import { SelectFromSixItems, GetRandomNumberFrom1ToMax } from "./random";
 
 const seasingsList = 
     [
@@ -11,19 +11,10 @@ const seasingsList =
         'citrus'
     ];
 
-const selectedSeasonings = () => {
+export const SelectedSeasonings = () => {
     let toppingsStr = '';
     for (let i = 1; i <= GetRandomNumberFrom1ToMax(3); i++) {
         toppingsStr += SelectFromSixItems(seasingsList) + ', ';
     }
     return toppingsStr.slice(0, -2);
 }
-
-export const Seasonings = () =>{
-    return (
-        <>
-            <h3>Seasonings</h3>
-            <p>{ selectedSeasonings() }</p>
-        </>
-    )
-};

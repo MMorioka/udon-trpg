@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectFromSixSquareItems, GetRandomNumberFrom1ToMax } from "./selectRandom";
+import { SelectFromSixSquareItems, GetRandomNumberFrom1ToMax } from "./random";
 
 const toppingsList = 
     [
@@ -53,19 +53,10 @@ const toppingsList =
         ],
     ]
 
-const selectedToppings = () => {
+export const SelectedToppings = () => {
     let toppingsStr = '';
     for (let i = 1; i <= GetRandomNumberFrom1ToMax(3); i++) {
         toppingsStr += SelectFromSixSquareItems(toppingsList) + ', ';
     }
     return toppingsStr.slice(0, -2);
 }
-
-export const Toppings = () =>{
-    return (
-        <>
-            <h3>Toppings</h3>
-            <p>{ selectedToppings() }</p>
-        </>
-    )
-};

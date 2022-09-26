@@ -1,5 +1,5 @@
 import React from "react";
-import { SelectFromSixItems } from "./selectRandom";
+import { SelectFromSixItems } from "./random";
 
 const noodlesList = 
     [
@@ -11,13 +11,4 @@ const noodlesList =
         'instant noodles'
     ];
 
-const selectedNoodles = SelectFromSixItems(noodlesList);
-
-export const Noodles = () =>{
-    return (
-        <>
-            <h3>Noodles</h3>
-            <p>{ selectedNoodles }</p>
-        </>
-    )
-};
+export const SelectedNoodles = SelectFromSixItems(noodlesList);
