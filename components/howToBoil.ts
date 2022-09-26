@@ -1,4 +1,3 @@
-import React from "react";
 import { SelectFromSixItems } from "./random";
 
 const howToBoilList: Array<string> = 

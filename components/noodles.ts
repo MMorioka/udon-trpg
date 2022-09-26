@@ -1,7 +1,6 @@
-import React from "react";
 import { SelectFromSixItems } from "./random";
 
-const noodlesList = 
+const noodlesList: Array<string> = 
     [
         'chilled noodles', 
         'half-boiled noodles', 
@@ -11,4 +10,4 @@ const noodlesList =
         'instant noodles'
     ];
 
-export const SelectedNoodles = SelectFromSixItems(noodlesList);
+export const SelectedNoodles: string = SelectFromSixItems(noodlesList);

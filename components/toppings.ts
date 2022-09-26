@@ -1,7 +1,6 @@
-import React from "react";
 import { SelectFromSixSquareItems, GetRandomNumberFrom1ToMax } from "./random";
 
-const toppingsList = 
+const toppingsList: Array<Array<String>> = 
     [
         [
             'pudding', 

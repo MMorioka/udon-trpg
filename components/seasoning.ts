@@ -1,7 +1,6 @@
-import React from "react";
 import { SelectFromSixItems, GetRandomNumberFrom1ToMax } from "./random";
 
-const seasingsList = 
+const seasingsList: Array<string> = 
     [
         'green onions', 
         'ginger', 
